@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+  <title>Diml</title>
+  <style>body{background-color: purple;color:white;}h1{color black;text-align: center;}</style>
+  </head>
+    <body>
+  <h1>DIML ARTIST PORTAL</h1>
+  <style>p{text-align:center;color:grey;font-size:18px;}</style>
+  <input type="text" id="username" placeholder="Enter User Name">
+  <style>input{width:300px;
+    padding:10px;
+    display:block;
+    margin:20px auto;}></style>
+    <input type="password" id="password" placeholder="Enter your password">
+      <button onclick="checklogin()">LOGIN</button>
+      <style>button{width:100px;
+                    padding:10px;
+                    color:white;
+                    background-color:black;
+                    margin:20px auto;
+                    font-size: 16px;
+                    display:block;
+                   text-align:center;}</style>
+  <p>Login to Continue</p>
+      <style>body{background-color:purple;min-height: 100vh;
+                  display:flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;}</style>
+                                    
+                                      <input type="checkbox" onclick="togglepassword()">show password
+      <script>function checklogin(){let user = document.getElementById('username').value;
+        let pass =document.getElementById('password').value;
+                                    if (user==="Fetty" && pass ==="DIML6") {alert ("welcome Back, Fetty!");} else {alert("wrong username or password");}
+                                   }
+              function togglepassword() {let passField = document.getElementById('password');
+                                        if (passField.type === "password"){passField.type = "text";}else{passField.type = "password";}
+        }
+    </script>
+                                                
+    </body>
+      
+    
+</html>
